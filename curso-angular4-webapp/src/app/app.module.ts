@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { routing, appRoutingProviders } from './app.routing';
 
@@ -17,7 +18,8 @@ import { ErrorComponent } from './components/error.component';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
