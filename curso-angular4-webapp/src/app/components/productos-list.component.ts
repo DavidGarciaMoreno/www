@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Producto } from '../models/producto';
 import { ProductoService } from '../services/producto.service';
 
 @Component ({
@@ -9,6 +10,7 @@ import { ProductoService } from '../services/producto.service';
 })
 export class ProductosListComponent {
 	public titulo: string;
+	public productos: Producto[];
 
 	constructor(
 		private _route: ActivatedRoute,
@@ -20,6 +22,17 @@ export class ProductosListComponent {
 
 	ngOnInit() {
 		console.log('productos-list.component.ts cargado')
-		alert(this._productoService.getProducto());
+		this._productoService.getProducto().subscribe(
+			result => {
+				if(result.code != 200) {
+					console.log(result);
+				} else {
+					this.productos = result.data;
+				}
+			},
+			error => {
+				console.log(<any>error);
+			}
+		);
 	}
 }
