@@ -11,12 +11,18 @@ import { Producto } from '../models/producto';
 })
 export class ProductAddComponent {
 	public title: string;
+	public product: Producto;
 
 	constructor() {
 		this.title = 'Crear un nuevo producto';
+		this.product = new Producto(0, '', '', 0, '');
 	}
 
 	ngOnInit() {
 		console.log('Componente producto-add cargado');
+	}
+
+	onSubmit() {
+		console.log(this.product);
 	}
 }
