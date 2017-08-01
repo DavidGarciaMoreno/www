@@ -31,29 +31,36 @@ export class ProductAddComponent {
 
 	onSubmit() {
 		console.log(this.product);
-		console.log(this.filesToUpload[0]);
+		
+		if(this.filesToUpload.length >= 1) {
+			this._productoService.makeFileRequest(GLOBAL.url+'upload-file', [], this.filesToUpload).then(
+				(result) => {
+					console.log(result);
+					this.resultUpload = result;
+					this.product.image = this.resultUpload.filename;
+					this.saveProducto();					
+			}, 
+				(error) => {
+					console.log(error);
+			});
+		} else {
+			this.saveProducto();					
+		}
+	}
 
-		this._productoService.makeFileRequest(GLOBAL.url+'upload-file', [], this.filesToUpload).then(
-			(result) => {
-				console.log(result);
-		}, 
-			(error) => {
-				console.log(error);
-		});
-
-		this._productoService.addProducto(this.product).subscribe(
-			response => {
-				if(response.code == 200) {
-					console.log('SUCCESS');
-					this._router.navigate(['/productos']);
-				} else {
-					console.log(response);
-				}
-			},
-			error => {
-				console.log(<any>error);
-			}
-		);
+	saveProducto() {
+				this._productoService.addProducto(this.product).subscribe(
+					response => {
+						if(response.code == 200) {
+							this._router.navigate(['/productos']);
+						} else {
+							console.log(response);
+						}
+					},
+					error => {
+						console.log(<any>error);
+					}
+				);		
 	}
 
 	fileChangeEvent(fileInput: any) {

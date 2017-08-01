@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home.component';
 import { ProductosListComponent } from './components/productos-list.component';
 import { ProductAddComponent } from './components/producto-add.component';
+import { ProductDetailComponent } from './components/producto-detail.component';
 import { ErrorComponent } from './components/error.component';
 
 const appRoutes: Routes = [
@@ -11,6 +12,7 @@ const appRoutes: Routes = [
 	{ path: 'home', component: HomeComponent },
 	{ path: 'productos', component: ProductosListComponent },
 	{ path: 'crear-producto', component: ProductAddComponent },
+	{ path: 'producto/:id', component: ProductDetailComponent },
 	{ path: '**', component: ErrorComponent }
 ];
 
