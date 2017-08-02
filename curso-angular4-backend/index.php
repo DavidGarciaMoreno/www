@@ -43,7 +43,7 @@ $app->get('/productos', function() use($app, $db) {
 });
 
 // GET A PRODUCT
-$app->get('/productos/:id', function($id) use($app, $db) {
+$app->get('/producto/:id', function($id) use($app, $db) {
 	$sql = 'SELECT * FROM productos WHERE id = '.$id;
 	$query = $db->query($sql);
 
@@ -67,7 +67,7 @@ $app->get('/productos/:id', function($id) use($app, $db) {
 });
 
 // DELETE A PRODUCT
-$app->delete('/productos/:id', function($id) use($app, $db) {
+$app->delete('/producto/:id', function($id) use($app, $db) {
 	$sql = 'DELETE FROM productos WHERE id = '.$id;
 	$query = $db->query($sql);
 
@@ -114,24 +114,12 @@ $app->post('/update-producto/:id', function($id) use($app, $db) {
 	$json = $app->request->post('json');
 	$data = json_decode($json, true);
 
-	if(!isset($data['name'])) {
-  	$data['name']=null;
-  }  
-
-  if(!isset($data['description'])) {
-  	$data['description']=null;
-  }  
-
-  if(!isset($data['price'])) {
-  	$data['price']=null;
-  }  
-
 	$sql = "UPDATE productos SET ".
 		     "name = '{$data['name']}', ".
 		     "description = '{$data['description']}', ";
 
   if(isset($data['image'])){
-    $sql .= "image = '{$data['image']}' ";
+    $sql .= "image = '{$data['image']}', ";
   }
 
   $sql .=	"price = '{$data['price']}' ".
@@ -149,7 +137,7 @@ $app->post('/update-producto/:id', function($id) use($app, $db) {
 	  	'status' => 'error',
 	  	'code' => 404,
 	  	'message' => 'Producto no se ha actualizado'
-	  );
+	  ); 
   }
 
   echo json_encode($result);

@@ -27,9 +27,19 @@ export class ProductoService{
 	addProducto(producto: Producto) {
 		let json = JSON.stringify(producto);
 		let params = 'json='+json;
-		let headers = new Headers({'Content-Type':'application/x-www-form-urlencoded'});		
+		let headers = new Headers({'Content-Type':'application/x-www-form-urlencoded'});
 
 		return this._http.post(this.url+'productos', params, {headers: headers})
+										 .map(res => res.json());
+	}
+
+	editProducto(id, producto: Producto) {
+		let json = JSON.stringify(producto);
+		let params = 'json='+json;
+		let headers = new Headers({'Content-Type':'application/x-www-form-urlencoded'});
+
+		console.log("editProducto before post<<< "+id);
+		return this._http.post(this.url+'update-producto/'+id, params, {headers: headers})
 										 .map(res => res.json());
 	}
 
