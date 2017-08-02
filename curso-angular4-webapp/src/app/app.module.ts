@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home.component';
 import { ProductosListComponent } from './components/productos-list.component';
 import { ProductAddComponent } from './components/producto-add.component';
+import { ProductEditComponent } from './components/producto-edit.component';
 import { ProductDetailComponent } from './components/producto-detail.component';
 import { ErrorComponent } from './components/error.component';
 
@@ -18,6 +19,7 @@ import { ErrorComponent } from './components/error.component';
     HomeComponent,
     ProductosListComponent,
     ProductAddComponent,
+    ProductEditComponent,
     ProductDetailComponent,
     ErrorComponent
   ],
