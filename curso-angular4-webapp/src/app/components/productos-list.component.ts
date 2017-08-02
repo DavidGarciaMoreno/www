@@ -22,7 +22,7 @@ export class ProductosListComponent {
 
 	ngOnInit() {
 		console.log('productos-list.component.ts cargado')
-		this._productoService.getProducto().subscribe(
+		this._productoService.getProductos().subscribe(
 			result => {
 				if(result.code != 200) {
 					console.log(result);

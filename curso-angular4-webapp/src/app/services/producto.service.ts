@@ -15,9 +15,13 @@ export class ProductoService{
 		this.url = GLOBAL.url;
 	}
 
-	getProducto()
+	getProductos()
 	{
-		return this._http.get(this.url+'/productos').map(res => res.json());
+		return this._http.get(this.url+'productos').map(res => res.json());
+	}
+
+	getProducto(id) {
+		return this._http.get(this.url+'producto/'+id).map(res => res.json());
 	}
 
 	addProducto(producto: Producto) {
