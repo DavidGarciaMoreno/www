@@ -2,13 +2,7 @@
 	"folders":
 	[
 		{
-			"path": "."
-		},
-		{
-			"path": "C:\\wamp64\\www\\curso-angular4-backend"
-		},
-		{
-			"path": "C:\\wamp64\\www\\curso-angular4-webapp"
+			"path": "C:\\dev\\www\\curso-angular4-webapp"
 		}
 	]
 }

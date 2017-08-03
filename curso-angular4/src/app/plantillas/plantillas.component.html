@@ -3,8 +3,13 @@
 	[propiedad_uno]="'valor de la propiedad uno'"
 	[texto_dos]="'valor de la propiedad dos'"
 	[propiedad_cuatro]="identity"
-	[propiedad_tres]="dato_externo">
+	[propiedad_tres]="dato_externo"
+	(desde_hijo)="recibirDatos($event)">
 </componente-hijo>
+
+<div *ngIf="datos_del_hijo">
+	<h1>{{datos_del_hijo.nombre}}</h1>
+</div>
 <hr>
 
 <h4>{{titulo}}</h4>

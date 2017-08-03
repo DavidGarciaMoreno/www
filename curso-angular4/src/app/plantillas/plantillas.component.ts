@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 export class PlantillasComponent {
 	public titulo: string;
 	public administrador: boolean;
+	public datos_del_hijo;
 
 	public dato_externo = "David";
 	public identity = {
@@ -22,5 +23,10 @@ export class PlantillasComponent {
 
 	cambiar(value: boolean) {
 		this.administrador = value;
+	}
+
+	recibirDatos(event) {
+		console.log(event.nombre);
+		this.datos_del_hijo = event;
 	}
 }
