@@ -1,0 +1,354 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Event",
+				"EventEmitter\talias"
+			],
+			[
+				"_",
+				"_productService\tproperty"
+			],
+			[
+				"Product",
+				"ProductEditComponent\talias"
+			],
+			[
+				"Produ",
+				"ProductoService\talias"
+			],
+			[
+				"temp",
+				"templateUrl\tproperty"
+			],
+			[
+				"rou",
+				"_router\tproperty"
+			],
+			[
+				"Prod",
+				"ProductoService\talias"
+			],
+			[
+				"tem",
+				"templateUrl\tproperty"
+			],
+			[
+				"pr",
+				"producto\tscript"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/products/product.ts",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"file": "app/products/product.service.ts",
+			"file_size": 0,
+			"file_write_time": 131463461975112034,
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "Package Control: install",
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/simpleCRUD",
+		"/C/wamp64/www/simpleCRUD/app",
+		"/C/wamp64/www/simpleCRUD/app/products"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/simpleCRUD/package.json",
+		"/C/wamp64/www/simpleCRUD/index.html",
+		"/C/wamp64/www/simpleCRUD/app/products/product.template.html",
+		"/C/wamp64/www/simpleCRUD/app/products/product.component.ts",
+		"/C/wamp64/www/simpleCRUD/app/app.module.ts",
+		"/C/wamp64/www/simpleCRUD/app/app.routing.ts",
+		"/C/wamp64/www/simpleCRUD/simpleCRUD.sublime-project",
+		"/C/wamp64/www/curso-angular4/src/app/hijo/hijo.component.html",
+		"/C/wamp64/www/curso-angular4/src/app/hijo/hijo.component.ts",
+		"/C/wamp64/www/curso-angular4/src/app/plantillas/plantillas.component.html",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/extra/httpd-vhosts.conf",
+		"/C/Users/davig/Desktop/hosts.txt",
+		"/C/wamp64/www/curso-angular4/src/app/plantillas/plantillas.component.ts",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/wamp64/www/curso-angular4-backend/index.php",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/services/producto.service.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/components/producto-edit.component.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/components/producto-add.component.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/views/productos-list.html",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/components/producto-detail.component.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/views/producto-add.html",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/views/producto-detail.html",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/app.routing.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/app.module.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/components/productos-list.component.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/assets/styles.css",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/services/global.ts",
+		"/C/dev/www/curso-angular4-webapp/src/index.html",
+		"/C/cygwin64/home/davig/.bash_profile",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/httpd.conf"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"component",
+			"ProductAddComponent"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/products/product.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/products/product.service.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "simpleCRUD.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 288.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
