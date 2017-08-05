@@ -34,7 +34,7 @@
 			<br>
 
 			<form *ngIf="productForm">
-				<h2>Product Details</h2>
+				<h2>Add New Product</h2>
 				<p>ID: <input type="text" name="id" [(ngModel)]="newProduct.id"></p>
 				<p>Name: <input type="text" name="name" [(ngModel)]="newProduct.name"></p>
 				<p>Description: <input type="text" name="description" [(ngModel)]="newProduct.description"></p>
@@ -46,7 +46,7 @@
 			</form>
 
 			<form *ngIf="editProductForm">
-				<h2>Product Details</h2>
+				<h2>Edit Product Details</h2>
 				<p>ID: <input type="text" name="id" [(ngModel)]="editedProduct.id"></p>
 				<p>Name: <input type="text" name="name" [(ngModel)]="editedProduct.name"></p>
 				<p>Description: <input type="text" name="description" [(ngModel)]="editedProduct.description"></p>

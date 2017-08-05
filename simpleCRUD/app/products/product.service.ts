@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { findIndex } from 'lodash';
 import { Product } from './product';
 import { PRODUCT_ITEMS } from './product.data';
 
@@ -14,6 +15,13 @@ export class ProductService {
 	addProduct(product: Product) {
 		this.pItems.push(product);
 		console.log(this.pItems);
+	}
+
+	updateProduct(product: Product) {
+		let index = findIndex(this.pItems, (p: Product) => {
+			return p.id === product.id;
+		});
+		this.pItems[index] = product;
 	}
 }
 
