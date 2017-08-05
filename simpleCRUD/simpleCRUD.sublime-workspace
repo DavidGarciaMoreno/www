@@ -4,16 +4,16 @@
 		"selected_items":
 		[
 			[
+				"Product",
+				"ProductService\talias"
+			],
+			[
 				"Event",
 				"EventEmitter\talias"
 			],
 			[
 				"_",
 				"_productService\tproperty"
-			],
-			[
-				"Product",
-				"ProductEditComponent\talias"
 			],
 			[
 				"Produ",
@@ -44,22 +44,28 @@
 	"buffers":
 	[
 		{
-			"file": "app/products/product.ts",
+			"file": "app/products/product.service.ts",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 672,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "",
-			"file": "app/products/product.service.ts",
-			"file_size": 0,
-			"file_write_time": 131463461975112034,
+			"file": "app/products/product.component.ts",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 481,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/products/product.data.ts",
+			"settings":
+			{
+				"buffer_size": 360,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -72,20 +78,24 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 104.0,
-		"last_filter": "Package Control: install",
+		"height": 196.0,
+		"last_filter": "Snippet: ser",
 		"selected_items":
 		[
+			[
+				"Snippet: ser",
+				"Snippet: Angular 2 Service Snippet"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: install",
 				"Package Control: Install Package"
 			],
 			[
 				"Package Control: Install",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -123,11 +133,12 @@
 	],
 	"file_history":
 	[
-		"/C/wamp64/www/simpleCRUD/package.json",
-		"/C/wamp64/www/simpleCRUD/index.html",
+		"/C/wamp64/www/simpleCRUD/app/products/product.ts",
 		"/C/wamp64/www/simpleCRUD/app/products/product.template.html",
-		"/C/wamp64/www/simpleCRUD/app/products/product.component.ts",
 		"/C/wamp64/www/simpleCRUD/app/app.module.ts",
+		"/C/wamp64/www/simpleCRUD/index.html",
+		"/C/wamp64/www/simpleCRUD/package.json",
+		"/C/wamp64/www/simpleCRUD/app/products/product.component.ts",
 		"/C/wamp64/www/simpleCRUD/app/app.routing.ts",
 		"/C/wamp64/www/simpleCRUD/simpleCRUD.sublime-project",
 		"/C/wamp64/www/curso-angular4/src/app/hijo/hijo.component.html",
@@ -156,7 +167,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -177,10 +188,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"';\n",
 			"component",
 			"ProductAddComponent"
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -189,24 +201,59 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/products/product.ts",
+					"file": "app/products/product.service.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 672,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/products/product.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								461,
+								461
 							]
 						],
 						"settings":
@@ -228,31 +275,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/products/product.service.ts",
+					"buffer": 2,
+					"file": "app/products/product.data.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 360,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								75,
+								75
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": false,
-								"indentSize": 2,
-								"tabSize": 2
-							},
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
@@ -267,7 +308,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{
