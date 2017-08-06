@@ -20,7 +20,14 @@ export class ListPokemonComponent implements OnInit {
   }
 
   getPokemons() {
-
+    this._pokemonService.getPokemons()
+        .subscribe(
+          (pokemon: Pokemon[]) => {
+            console.log(pokemon);
+            this.pokemon = pokemon;
+          },
+          error => this.errorMessage = <any> error;
+        );
   }
 
 }

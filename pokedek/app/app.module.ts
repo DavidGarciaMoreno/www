@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,11 +13,13 @@ import { AddPokemonComponent } from './poke-add/add-pokemon.component';
 import { ListPokemonComponent } from './poke-list/list-pokemons.component';
 
 import { PokemonService } from './shared/pokemon.service';
+import './shared/rxjs-extensions';
 
 @NgModule({
   imports: [ BrowserModule,
              FormsModule,
-             AppRoutingModule
+             AppRoutingModule,
+             HttpModule
            ],
   declarations: [ AppComponent,
                   HomeComponent,
