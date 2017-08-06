@@ -16,7 +16,7 @@
 						<td>{{ product.id }}</td>
 						<td>{{ product.name }}</td>
 						<td>{{ product.description }}</td>
-						<td>{{ product.price }}</td>
+						<td>{{ product.price | currency:'USD':true:'1.0-2' }}</td>
 						<td>
 							<button class="btn btn-info" (click)="showEditProductForm(product)">
 								<i class="fa fa-edit"></i>
@@ -41,7 +41,7 @@
 				<p>Price: <input type="text" name="price" [(ngModel)]="newProduct.price"></p>
 				<p>
 					<button type="button" class="btn btn-primary" (click)="saveProduct(newProduct)">Submit</button>
-					<button type="button" class="btn btn-warning">Cancel</button>		
+					<button type="button" class="btn btn-warning" (click)="cancelNewProduct()">Cancel</button>		
 				</p>
 			</form>
 

@@ -63,6 +63,11 @@ export class ProductComponent implements OnInit {
 		this._productService.deleteProduct(product);
 	}
 
+	cancelNewProduct() {
+		this.newProduct = {};
+		this.productForm = false;
+	}
+
 	cancelEdits() {
 		this.editedProduct = {};
 		this.editProductForm = false;
