@@ -5,7 +5,7 @@ import { Pokemon } from './pokemon';
 
 @Injectable()
 export class PokemonService {
-  private pokemonUrl: string = 'api/pokemons_25.json';
+  private pokemonUrl: string = 'api/pokemons';
 	
   constructor(private _http: Http) {}
 
@@ -13,7 +13,7 @@ export class PokemonService {
   getPokemons(): Observable<Pokemon[]> {
     return this._http
                .get(this.pokemonUrl)
-               .map((res: Response) => <Pokemon[]> res.json())
+               .map((res: Response) => <Pokemon[]> res.json().data)
                .do(data => console.log(data))
                .catch(this.handleError);
 

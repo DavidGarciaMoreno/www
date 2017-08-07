@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { HttpModule } from '@angular/http';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+
+import { PokemonData } from './shared/pokemon-data';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -19,7 +22,8 @@ import './shared/rxjs-extensions';
   imports: [ BrowserModule,
              FormsModule,
              AppRoutingModule,
-             HttpModule
+             HttpModule,
+             InMemoryWebApiModule.forRoot(PokemonData)
            ],
   declarations: [ AppComponent,
                   HomeComponent,
