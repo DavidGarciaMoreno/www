@@ -26,8 +26,7 @@ export class ListPokemonComponent implements OnInit {
             console.log(pokemon);
             this.pokemon = pokemon;
           },
-          error => this.errorMessage = <any> error;
-        );
+          error => this.errorMessage = <any> error
+        )
   }
-
 }
