@@ -25,7 +25,7 @@
             <button type="button" class="btn btn-secondary" *ngIf="poke.type.indexOf('Psychic') !== -1">Psychic</button>
             <span class="card-link" hidden><i class="fa fa-pencil"></i></span>
             <span class="card-link text-warning"><i class="fa fa-info-circle fa-2x"></i></span>
-            <span class="card-link text-danger" placement="right"><i class="fa fa-trash-o fa-2x"></i></span>
+            <span class="card-link text-danger" placement="right" (click)="deletePokemon(poke)"><i class="fa fa-trash-o fa-2x"></i></span>
           </div>
         </div>
       </div>

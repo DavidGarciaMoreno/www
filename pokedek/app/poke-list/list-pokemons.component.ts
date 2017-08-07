@@ -29,4 +29,22 @@ export class ListPokemonComponent implements OnInit {
           error => this.errorMessage = <any> error
         )
   }
+
+  deletePokemon(pokemon: Pokemon) {
+    this._pokemonService.deletePokemon(pokemon)
+        .subscribe(
+          () => this.deletePokemonFromList(pokemon),
+          error => this.errorMessage = <any> error,
+          () => {
+            //this.getPokemons();
+          }
+        );
+  }
+
+  private deletePokemonFromList(pokemon: Pokemon) {
+    var index = this.pokemon.indexOf(pokemon, 0);
+    if(index > -1) {
+      this.pokemon.splice(index, 1);
+    }
+  }
 }
