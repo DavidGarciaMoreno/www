@@ -10,7 +10,7 @@
             <fieldset>
               <div class="form-group">
                 <div class="col-md-3">
-                  <em>Required</em>
+                  <em *ngIf="newPokemonForm.controls.name?.invalid && (newPokemonForm.controls.name?.touched || mouseoverLogin)">Required</em>
                   <label class="form-control-label" for="name">Pokemon</label>
                 </div>              
 
@@ -41,7 +41,7 @@
 
               <div class="form-group">
                 <div class="col-md-4">
-                  <em>Required</em>
+                  <em *ngIf="newPokemonForm.controls.type?.invalid && (newPokemonForm.controls.type?.touched || mouseoverLogin)">Required</em>
                   <label class="form-control-label" for="type">Pokemon Type</label>
                 </div>
 
@@ -81,14 +81,14 @@
 
               <div class="form-group">
                 <div class="col-md-4 col-md-offsett-2">
-                  <span>
+                  <span (mouseenter)="mouseoverLogin=true" (mouseleave)="mouseoverLogin=false">
                     <button class="btn btn-primary" type="submit" style="width: 80px; margin-right: 10px" [disabled]="!validate.valid">Save</button>
                   </span>
                   <span>
                     <a class="btn btn-default" style="width: 80px" [routerLink]="['/']">Cancel</a>  
                   </span>                  
                 </div>
-              </div>                            
+              </div>                           
             </fieldset>
           </form>
         </div>
