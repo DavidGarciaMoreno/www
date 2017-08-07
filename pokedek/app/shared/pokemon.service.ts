@@ -19,6 +19,21 @@ export class PokemonService {
 
   }
 
+  addPokemon(pokemon: any): Observable<Pokemon> {
+    let headers = new Headers({'Content-Type': 'application/json'});
+    let options = new RequestOptions({headers: headers});
+    let body = JSON.stringify(pokemon);
+    let url = `${this.pokemonUrl}`;
+
+    return this._http
+               .post(url, body, options)
+               .map((response: Response) => {
+                 return response.json();
+               })
+               .do(data => console.log(data))
+               .catch(this.handleError);
+  }
+
   deletePokemon(pokemon: Pokemon): Observable<Response> {
     let headers = new Headers({'Content-Type': 'application/json'});
     let options = new RequestOptions({headers: headers});
