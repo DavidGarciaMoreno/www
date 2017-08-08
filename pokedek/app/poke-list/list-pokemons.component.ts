@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { Pokemon } from '../shared/pokemon';
 import { PokemonService } from '../shared/pokemon.service';
 import { ModalDirective } from 'ng2-bootstrap';
-import { PokemonModalComponent } from './pokemon-model.component';
+import { PokemonModalComponent } from './pokemon-modal.component';
 
 @Component({
 	moduleId: module.id,
