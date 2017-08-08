@@ -18,7 +18,7 @@ export class PokemonService {
 
   }
 
-  getPokemonDetails(id: number): Observable<Pokemon[]> {
+  getPokemonDetails(id: number): Observable<Pokemon> {
     let url = `${this.pokemonUrl}/${id}`;
 
     return this._http

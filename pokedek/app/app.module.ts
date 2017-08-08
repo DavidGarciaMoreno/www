@@ -16,6 +16,7 @@ import { NavbarComponent } from './nav/nav.component';
 
 import { AddPokemonComponent } from './poke-add/add-pokemon.component';
 import { ListPokemonComponent } from './poke-list/list-pokemons.component';
+import { PokemonModalComponent } from './poke-list/pokemon-modal.component';
 
 import { PokemonService } from './shared/pokemon.service';
 import './shared/rxjs-extensions';
@@ -33,7 +34,8 @@ import './shared/rxjs-extensions';
                   HomeComponent,
                   NavbarComponent,
                   AddPokemonComponent,
-                  ListPokemonComponent
+                  ListPokemonComponent,
+                  PokemonModalComponent
                 ],
   providers: [ PokemonService ],
   bootstrap: [ AppComponent ]

@@ -23,7 +23,7 @@ export class AddPokemonComponent {
             console.log('Pokemon saved');
             this._router.navigate(['/']);
           },
-          error => console.log('error', error);
+          error => console.log('error', error)
         )
   }
 
