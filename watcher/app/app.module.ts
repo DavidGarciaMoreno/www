@@ -4,23 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 
+import { UIModule } from './ui/ui.module';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './nav/nav.component';
 
 import './shared/rxjs-extensions';
 
 @NgModule({
-  imports: [ BrowserModule,
-                   FormsModule,
-                   AppRoutingModule
-                   ],
-  declarations: [ AppComponent,
-                          HomeComponent,
-                          NavbarComponent
-                          ],
+  imports: [ 
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    UIModule
+  ],
+  declarations: [ 
+    AppComponent,
+    HomeComponent
+  ],
   providers: [ ],
-  bootstrap:    [ AppComponent ]
+  bootstrap: [ AppComponent ]
 })
 
 export class AppModule { }

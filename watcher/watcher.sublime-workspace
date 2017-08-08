@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"nav",
+				"navbar.component\tscript"
+			],
+			[
 				"backgr",
 				"background-image"
 			],
@@ -88,30 +92,12 @@
 	"buffers":
 	[
 		{
-			"file": "app/shared/css/styles.css",
+			"file": "watcher.sublime-project",
 			"settings":
 			{
-				"buffer_size": 163,
+				"buffer_size": 106,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/shared/shared.module.ts",
-			"settings":
-			{
-				"buffer_size": 263,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/shared/rxjs-extensions.ts",
-			"settings":
-			{
-				"buffer_size": 0,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -180,19 +166,32 @@
 	},
 	"expanded_folders":
 	[
-		"/C/wamp64/www/watcher",
-		"/C/wamp64/www/watcher/api",
-		"/C/wamp64/www/watcher/app",
-		"/C/wamp64/www/watcher/app/shared"
+		"/C/wamp64/www/watcher"
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/watcher/watcher.sublime-project",
+		"/C/wamp64/www/watcher/app/app.template.html",
+		"/C/wamp64/www/watcher/app/ui/navbar/navbar.component.ts",
+		"/C/wamp64/www/watcher/app/app.module.ts",
+		"/C/wamp64/www/watcher/app/ui/ui.module.ts",
+		"/C/wamp64/www/watcher/app/ui/footer/footer.component.ts",
+		"/C/wamp64/www/pokedek/app/poke-list/list-pokemons.component.ts",
+		"/C/wamp64/www/watcher/app/shared/shared.module.ts",
+		"/C/wamp64/www/watcher/app/ui/footer/footer.template.html",
+		"/C/wamp64/www/watcher/app/shared/css/styles.css",
+		"/C/wamp64/www/watcher/app/shared/rxjs-extensions.ts",
+		"/C/wamp64/www/watcher/index.html",
+		"/C/wamp64/www/watcher/app/ui/search/search-bar.component.ts",
+		"/C/wamp64/www/watcher/app/ui/search/search-bar.template.html",
+		"/C/wamp64/www/watcher/app/ui/footer/footer.styles.css",
+		"/C/wamp64/www/watcher/app/ui/navbar/navbar.template.html",
+		"/C/wamp64/www/watcher/app/ui/navbar/navItems.ts",
 		"/C/wamp64/www/watcher/package.json",
 		"/C/wamp64/www/watcher/api/carousel_items.json",
 		"/C/wamp64/www/watcher/api/featured_shows.json",
 		"/C/wamp64/www/pokedek/app/app.module.ts",
 		"/C/wamp64/www/pokedek/app/poke-list/pokemon-modal.component.ts",
-		"/C/wamp64/www/pokedek/app/poke-list/list-pokemons.component.ts",
 		"/C/wamp64/www/pokedek/app/poke-list/list-pokemons.template.html",
 		"/C/wamp64/www/pokedek/app/poke-list/list-pokemons.css",
 		"/C/wamp64/www/pokedek/app/poke-list/pokemon-modal.template.html",
@@ -300,87 +299,29 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/shared/css/styles.css",
+					"file": "watcher.sublime-project",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 163,
+						"buffer_size": 106,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								159,
-								159
+								81,
+								81
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/shared/shared.module.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 263,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								262,
-								262
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/shared/rxjs-extensions.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"use_tab_stops": false
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

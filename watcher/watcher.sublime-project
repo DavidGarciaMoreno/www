@@ -2,17 +2,7 @@
 	"folders":
 	[
 		{
-			"file_exclude_patterns":
-			[
-				"app/*.js",
-				"app/*.js.map"
-			],
-			"path": "C:\\wamp64\\www\\pokedek"
-		},
-		{
-			"path": "C:\\wamp64\\www\\simpleCRUD"
-		},
-		{
+      "file_exclude_patterns": ["app/*.js", "app/*.map.js"],
 			"path": "."
 		}
 	]
