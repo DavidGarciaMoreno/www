@@ -8,6 +8,5 @@ import { Featured } from './featured';
   styleUrls: ['styles.css']
 })
 export class ShowDetailsComponent {
-  constructor() {}
-
+  @Input() show: Featured;
 }

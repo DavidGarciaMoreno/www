@@ -1,16 +1,12 @@
-<h2>Show Details</h2>
-<!--
-<article>
-  <header>
-    <h3></h3>
+<article class="card">
+  <header class="title-header">
+    <h3 class="card-title">{{ show.name }}</h3>
   </header>
-  <div>
-    <div>
-      <img src="">
+  <div class="card-block">
+    <div class="img-card">
+      <img [src]="show.image" alt="Movie" class="w-100 poster" />
     </div>
-    <p></p>
-    <a href=""><i></i></a>
+    <p class="tagline card-text text-xs-center">{{ show.network }}</p>
+    <a target="_blank" [href]="show.link" class="btn btn-primary btn-block"><i class="fa fa-eye"> Details</i></a>
   </div>
 </article>
-
--->
