@@ -1,0 +1,646 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"isload",
+				"isLoading\tproperty"
+			],
+			[
+				"Detia",
+				"DetailsService\talias"
+			],
+			[
+				"detai",
+				"details.service\tscript"
+			],
+			[
+				"Subs",
+				"Subscription\texternal module name"
+			],
+			[
+				"isloa",
+				"isLoading\tproperty"
+			],
+			[
+				"Fea",
+				"FeaturedService\talias"
+			],
+			[
+				"fea",
+				"featured.service\tscript"
+			],
+			[
+				"impo",
+				"import\tkeyword"
+			],
+			[
+				"featu",
+				"featured-shows.component\tscript"
+			],
+			[
+				"styles",
+				"styleUrls\tproperty"
+			],
+			[
+				"Caro",
+				"CarouselService\talias"
+			],
+			[
+				"carousel",
+				"carousel.service\tscript"
+			],
+			[
+				"carou",
+				"carousel\tscript"
+			],
+			[
+				"caro",
+				"CarouselImageComponent\talias"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"nav",
+				"navbar.component\tscript"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"View",
+				"ViewContainerRef\talias"
+			],
+			[
+				"poke",
+				"PokemonModalComponent\talias"
+			],
+			[
+				"po",
+				"pokemon\tscript"
+			],
+			[
+				"border-boto",
+				"border-bottom-color"
+			],
+			[
+				"style",
+				"styleUrls\tproperty"
+			],
+			[
+				"ng2",
+				"ng2-bootstrap\texternal module name"
+			],
+			[
+				"angu",
+				"angular-in-memory-web-api"
+			],
+			[
+				"Pokemo",
+				"PokemonService\talias"
+			],
+			[
+				"templa",
+				"templateUrl\tproperty"
+			],
+			[
+				"produ",
+				"productForm\tproperty"
+			],
+			[
+				"Event",
+				"EventEmitter\talias"
+			],
+			[
+				"_",
+				"_productService\tproperty"
+			],
+			[
+				"Product",
+				"ProductEditComponent\talias"
+			],
+			[
+				"Produ",
+				"ProductoService\talias"
+			],
+			[
+				"temp",
+				"templateUrl\tproperty"
+			],
+			[
+				"rou",
+				"_router\tproperty"
+			],
+			[
+				"Prod",
+				"ProductoService\talias"
+			],
+			[
+				"tem",
+				"templateUrl\tproperty"
+			],
+			[
+				"pr",
+				"producto\tscript"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/shared/css/styles.css",
+			"settings":
+			{
+				"buffer_size": 162,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 816,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/app.component.ts",
+			"settings":
+			{
+				"buffer_size": 210,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "weather.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 203.0,
+		"last_filter": "Package Control: install",
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Channel"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 731.0
+	},
+	"console":
+	{
+		"height": 234.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/weather",
+		"/C/wamp64/www/weather/app",
+		"/C/wamp64/www/weather/app/home",
+		"/C/wamp64/www/weather/app/shared",
+		"/C/wamp64/www/weather/app/shared/css"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/watcher/app/details/details.template.html",
+		"/C/wamp64/www/watcher/app/details/details.service.ts",
+		"/C/wamp64/www/watcher/app/search/search.template.html",
+		"/C/wamp64/www/watcher/app/details/details.component.ts",
+		"/C/wamp64/www/watcher/app/details/episode.ts",
+		"/C/wamp64/www/watcher/app/details/details.ts",
+		"/C/wamp64/www/watcher/app/details/details.module.ts",
+		"/C/wamp64/www/watcher/app/app.module.ts",
+		"/C/wamp64/www/watcher/app/app.routing.ts",
+		"/C/wamp64/www/watcher/app/search/search.module.ts",
+		"/C/wamp64/www/watcher/app/search/search.service.ts",
+		"/C/wamp64/www/watcher/app/ui/search/search-bar.component.ts",
+		"/C/wamp64/www/watcher/app/search/search.component.ts",
+		"/C/wamp64/www/watcher/app/ui/search/search-bar.template.html",
+		"/C/wamp64/www/watcher/app/shared/nav.service.ts",
+		"/C/wamp64/www/watcher/app/ui/ui.module.ts",
+		"/C/wamp64/www/watcher/app/shared/css/styles.css",
+		"/C/wamp64/www/watcher/app/featured/featured.service.ts",
+		"/C/wamp64/www/watcher/app/ui/navbar/navbar.component.ts",
+		"/C/wamp64/www/watcher/app/featured/featured.module.ts",
+		"/C/wamp64/www/watcher/app/search/show.ts",
+		"/C/wamp64/www/watcher/app/featured/show-details.template.html",
+		"/C/wamp64/www/watcher/app/featured/show-details.component.ts",
+		"/C/wamp64/www/watcher/app/featured/styles.css",
+		"/C/wamp64/www/watcher/app/featured/featured-shows.template.html",
+		"/C/wamp64/www/watcher/app/featured/featured-shows.component.ts",
+		"/C/wamp64/www/watcher/app/home/home.template.html",
+		"/C/wamp64/www/watcher/app/carousel/carousel.service.ts",
+		"/C/wamp64/www/watcher/app/shared/shared.module.ts",
+		"/C/wamp64/www/watcher/app/featured/featured.ts",
+		"/C/wamp64/www/watcher/api/featured_shows.json",
+		"/C/wamp64/www/watcher/app/carousel/carousel-container.template.html",
+		"/C/wamp64/www/watcher/app/carousel/carousel-image.component.ts",
+		"/C/wamp64/www/watcher/app/carousel/carousel-container.component.ts",
+		"/C/wamp64/www/watcher/app/carousel/carousel.module.ts",
+		"/C/wamp64/www/watcher/app/carousel/carousel-image.template.html",
+		"/C/wamp64/www/watcher/api/carousel_items.json",
+		"/C/wamp64/www/watcher/app/carousel/carousel.ts",
+		"/C/wamp64/www/watcher/app/ui/footer/footer.styles.css",
+		"/C/wamp64/www/watcher/app/ui/footer/footer.template.html",
+		"/C/wamp64/www/watcher/app/app.template.html",
+		"/C/wamp64/www/watcher/app/ui/footer/footer.component.ts",
+		"/C/wamp64/www/watcher/index.html",
+		"/C/wamp64/www/watcher/app/ui/navbar/navbar.template.html",
+		"/C/Users/davig/Desktop/app/ui/navbar/navbar.template.html",
+		"/C/wamp64/www/watcher/watcher.sublime-project",
+		"/C/wamp64/www/pokedek/app/poke-list/list-pokemons.component.ts",
+		"/C/wamp64/www/watcher/app/shared/rxjs-extensions.ts",
+		"/C/wamp64/www/watcher/app/ui/navbar/navItems.ts",
+		"/C/wamp64/www/watcher/package.json",
+		"/C/wamp64/www/pokedek/app/app.module.ts",
+		"/C/wamp64/www/pokedek/app/poke-list/pokemon-modal.component.ts",
+		"/C/wamp64/www/pokedek/app/poke-list/list-pokemons.template.html",
+		"/C/wamp64/www/pokedek/app/poke-list/list-pokemons.css",
+		"/C/wamp64/www/pokedek/app/poke-list/pokemon-modal.template.html",
+		"/C/wamp64/www/pokedek/app/poke-list/pokemon-model.template.html",
+		"/C/wamp64/www/pokedek/app/poke-add/add-pokemon.template.html",
+		"/C/wamp64/www/pokedek/app/poke-add/add-pokemon.component.ts",
+		"/C/wamp64/www/pokedek/app/shared/pokemon.service.ts",
+		"/C/wamp64/www/pokedek/package.json",
+		"/C/wamp64/www/pokedek/systemjs.config.js",
+		"/C/wamp64/www/pokedek/index.html",
+		"/C/Users/davig/Desktop/list-pokemons.template.html",
+		"/C/Users/davig/Desktop/add-pokemon.template.html",
+		"/C/wamp64/www/pokedek/app/nav/nav.template.html",
+		"/C/wamp64/www/pokedek/app/home/home.component.ts",
+		"/C/wamp64/www/pokedek/app/home/home.template.html",
+		"/C/wamp64/www/pokedek/app/app.routing.ts",
+		"/C/wamp64/www/pokedek/app/shared/pokemon-data.ts",
+		"/C/wamp64/www/pokedek/api/pokemons_25.json",
+		"/C/Users/davig/AppData/Roaming/Sublime Text 3/Packages/Pretty JSON/Pretty JSON.sublime-settings",
+		"/C/wamp64/www/pokedek/app/main.ts",
+		"/C/Users/davig/Downloads/v3a_pokeService/app/main.ts",
+		"/C/Users/davig/Downloads/v3a_pokeService/app/app.module.ts",
+		"/C/wamp64/www/pokedek/app/shared/rxjs-extensions.ts",
+		"/C/wamp64/www/pokedek/app/shared/pokemon.ts",
+		"/C/wamp64/www/simpleCRUD/app/products/product.template.html",
+		"/C/wamp64/www/pokedek/app/nav/nav.component.ts",
+		"/C/Users/davig/AppData/Roaming/Sublime Text 3/Packages/AngularJS/AngularJS-completions.sublime-settings",
+		"/C/wamp64/www/simpleCRUD/index.html",
+		"/C/wamp64/www/simpleCRUD/package.json",
+		"/C/wamp64/www/pokedek/app/shared/css/styles.css",
+		"/C/wamp64/www/simpleCRUD/simpleCRUD.sublime-project",
+		"/C/wamp64/www/simpleCRUD/app/products/product.component.ts",
+		"/C/wamp64/www/simpleCRUD/app/products/product.service.ts",
+		"/C/wamp64/www/simpleCRUD/app/main.ts",
+		"/C/wamp64/www/v5/app/products/product.service.ts",
+		"/C/wamp64/www/simpleCRUD/app/app.module.ts",
+		"/C/wamp64/www/v5/package.json",
+		"/C/wamp64/www/v5/app/app.routing.ts",
+		"/C/wamp64/www/simpleCRUD/app/app.routing.ts",
+		"/C/wamp64/www/simpleCRUD/app/products/product.data.ts",
+		"/C/wamp64/www/v5/app/app.module.ts",
+		"/C/wamp64/www/v5/app/products/product.component.ts",
+		"/C/wamp64/www/simpleCRUD/app/products/product.ts",
+		"/C/wamp64/www/v5/app/products/product.template.html",
+		"/C/wamp64/www/simpleCRUD/app/app.template.html",
+		"/C/wamp64/www/curso-angular4/src/app/hijo/hijo.component.html",
+		"/C/wamp64/www/curso-angular4/src/app/hijo/hijo.component.ts",
+		"/C/wamp64/www/curso-angular4/src/app/plantillas/plantillas.component.html",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/extra/httpd-vhosts.conf",
+		"/C/Users/davig/Desktop/hosts.txt",
+		"/C/wamp64/www/curso-angular4/src/app/plantillas/plantillas.component.ts",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/wamp64/www/curso-angular4-backend/index.php",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/services/producto.service.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/components/producto-edit.component.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/components/producto-add.component.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/views/productos-list.html",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/components/producto-detail.component.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/views/producto-add.html",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/views/producto-detail.html",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/app.routing.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/app.module.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/components/productos-list.component.ts",
+		"/C/wamp64/www/curso-angular4-webapp/src/assets/styles.css",
+		"/C/wamp64/www/curso-angular4-webapp/src/app/services/global.ts",
+		"/C/dev/www/curso-angular4-webapp/src/index.html",
+		"/C/cygwin64/home/davig/.bash_profile",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/httpd.conf"
+	],
+	"find":
+	{
+		"height": 64.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ngfor",
+			"center",
+			"SearchComponent",
+			"formPokemon",
+			"pokemon.ts",
+			"produc."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"CarouselModule",
+			"import",
+			"navbar",
+			"component",
+			"ProductAddComponent"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/shared/css/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								747,
+								43
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/app.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 210,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								205,
+								205
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "weather.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 60.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "weather.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 331.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
