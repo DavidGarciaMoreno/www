@@ -5,7 +5,15 @@
 		[
 			[
 				"Fea",
-				"FeaturedShowsComponent\talias"
+				"FeaturedService\talias"
+			],
+			[
+				"fea",
+				"featured.service\tscript"
+			],
+			[
+				"impo",
+				"import\tkeyword"
 			],
 			[
 				"featu",
@@ -136,19 +144,37 @@
 	"buffers":
 	[
 		{
-			"file": "app/featured/featured.module.ts",
+			"file": "app/search/search.service.ts",
 			"settings":
 			{
-				"buffer_size": 479,
+				"buffer_size": 253,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/featured/show-details.component.ts",
+			"file": "app/search/search.module.ts",
 			"settings":
 			{
-				"buffer_size": 290,
+				"buffer_size": 620,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/search/search.component.ts",
+			"settings":
+			{
+				"buffer_size": 265,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/search/search.template.html",
+			"settings":
+			{
+				"buffer_size": 92,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -219,33 +245,38 @@
 	"expanded_folders":
 	[
 		"/C/wamp64/www/watcher",
-		"/C/wamp64/www/watcher/api",
 		"/C/wamp64/www/watcher/app",
 		"/C/wamp64/www/watcher/app/featured",
-		"/C/wamp64/www/watcher/app/shared"
+		"/C/wamp64/www/watcher/app/search",
+		"/C/wamp64/www/watcher/app/shared/css",
+		"/C/wamp64/www/watcher/app/ui",
+		"/C/wamp64/www/watcher/app/ui/navbar"
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/watcher/app/ui/navbar/navbar.component.ts",
+		"/C/wamp64/www/watcher/app/app.module.ts",
+		"/C/wamp64/www/watcher/app/featured/featured.module.ts",
+		"/C/wamp64/www/watcher/app/search/search.component.ts",
+		"/C/wamp64/www/watcher/app/search/show.ts",
+		"/C/wamp64/www/watcher/app/shared/css/styles.css",
 		"/C/wamp64/www/watcher/app/featured/show-details.template.html",
-		"/C/wamp64/www/watcher/app/shared/shared.module.ts",
-		"/C/wamp64/www/watcher/app/featured/featured.service.ts",
 		"/C/wamp64/www/watcher/app/featured/show-details.component.ts",
-		"/C/wamp64/www/watcher/app/featured/featured-shows.component.ts",
 		"/C/wamp64/www/watcher/app/featured/styles.css",
+		"/C/wamp64/www/watcher/app/featured/featured.service.ts",
 		"/C/wamp64/www/watcher/app/featured/featured-shows.template.html",
+		"/C/wamp64/www/watcher/app/featured/featured-shows.component.ts",
+		"/C/wamp64/www/watcher/app/home/home.template.html",
+		"/C/wamp64/www/watcher/app/carousel/carousel.service.ts",
+		"/C/wamp64/www/watcher/app/shared/shared.module.ts",
 		"/C/wamp64/www/watcher/app/featured/featured.ts",
 		"/C/wamp64/www/watcher/api/featured_shows.json",
 		"/C/wamp64/www/watcher/app/carousel/carousel-container.template.html",
-		"/C/wamp64/www/watcher/app/shared/css/styles.css",
 		"/C/wamp64/www/watcher/app/carousel/carousel-image.component.ts",
 		"/C/wamp64/www/watcher/app/ui/search/search-bar.template.html",
-		"/C/wamp64/www/watcher/app/ui/navbar/navbar.component.ts",
 		"/C/wamp64/www/watcher/app/carousel/carousel-container.component.ts",
 		"/C/wamp64/www/watcher/app/carousel/carousel.module.ts",
-		"/C/wamp64/www/watcher/app/home/home.template.html",
-		"/C/wamp64/www/watcher/app/app.module.ts",
 		"/C/wamp64/www/watcher/app/carousel/carousel-image.template.html",
-		"/C/wamp64/www/watcher/app/carousel/carousel.service.ts",
 		"/C/wamp64/www/watcher/api/carousel_items.json",
 		"/C/wamp64/www/watcher/app/ui/ui.module.ts",
 		"/C/wamp64/www/watcher/app/carousel/carousel.ts",
@@ -349,6 +380,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"SearchComponent",
 			"formPokemon",
 			"pokemon.ts",
 			"produc."
@@ -359,6 +391,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"CarouselModule",
 			"import",
 			"navbar",
 			"component",
@@ -373,24 +406,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/featured/featured.module.ts",
+					"file": "app/search/search.service.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 479,
+						"buffer_size": 253,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								424,
-								424
+								185,
+								185
 							]
 						],
 						"settings":
@@ -402,24 +435,55 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/featured/show-details.component.ts",
+					"file": "app/search/search.module.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 290,
+						"buffer_size": 620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								463,
+								463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.5859375,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/search/search.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184,
+								199
 							]
 						],
 						"settings":
@@ -432,6 +496,41 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/search/search.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
