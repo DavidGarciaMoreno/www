@@ -1,12 +1,24 @@
-/* Navbar */
-.nav .navbar-nav {
-  font-size: 15px;
+.profile-btn {
+  margin-bottom: 15px;
 }
-#searchForm {
-  margin-right: 100px;
+
+.weather-search {
+  margin: 20px auto;
+  width: 40%;
 }
-@media (max-width: 1200px) {
-  #searchForm {
-    display: none;
+.weather-search label {
+  font-weight: bold;
+  margin-right: 20px;
+}
+.weather-search input {
+  padding: 3px 5px;
+  outline: none;
+  width: 75%;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .weather-list {
+    width: 80%;
   }
 }
