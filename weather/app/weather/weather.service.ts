@@ -4,11 +4,6 @@ import { Http, Response } from '@angular/http';
 import { IWeather } from './weather';
 import { WEATHER_ITEMS } from './weather.data';
 
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/observable/throw';
-
 @Injectable()
 export class WeatherService {
   private URL: string = 'http://api.openweathermap.org/data/2.5/weather?q=';

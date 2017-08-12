@@ -1,16 +1,18 @@
 <div class="weather-search">
-  <form>
+  <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <h3>Add City: </h3>
-      <input type="text" 
-             class="form-control"
-             placeholder="City">        
+      <input 
+        [formControl]="searchInput"
+        type="text" 
+        class="form-control"
+        placeholder="City">        
     </div>
     <button class="btn btn-success profile-btn" type="submit">
       Submit
     </button>
   </form>
   <div>
-    <h4>City found: <small></small></h4>
+    <h4 *ngIf="city.name">City found: <small>{{ city.name }}</small></h4>
   </div>
 </div>

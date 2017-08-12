@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { HttpModule } from '@angular/http';
@@ -13,12 +13,15 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { WeatherItemComponent, WeatherListComponent, WeatherSearchComponent } from './weather/index'
 
 import { WeatherService } from './weather/weather.service';
+import { ProfileService } from './sidebar/profile.service';
+import './shared/rxjs-extensions';
 
 @NgModule({
   imports: [ 
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     HttpModule
   ],
   declarations: [ 
@@ -30,7 +33,10 @@ import { WeatherService } from './weather/weather.service';
     WeatherSearchComponent,
     SidebarComponent 
   ],
-  providers: [ WeatherService ],
+  providers: [ 
+    WeatherService,
+    ProfileService 
+  ],
   bootstrap: [ AppComponent ]
 })
 
