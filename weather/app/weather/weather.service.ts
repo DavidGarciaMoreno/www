@@ -3,6 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import { Http, Response } from '@angular/http';
 import { IWeather } from './weather';
 import { WEATHER_ITEMS } from './weather.data';
+
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/do';
@@ -29,7 +30,7 @@ export class WeatherService {
     return this._http
                .get(this.URL + cityName + '&APPID=' + this.KEY + this.IMP)
                .map((res: Response) => <IWeather[]> res.json())
-               .do(res => console.log('Weather Data Object' + JSON.string(res))
+               .do(res => console.log('Weather Data Object' + JSON.stringify(res)))
                .catch(error => {
                  console.error(error);
                  return Observable.throw(error.json())
