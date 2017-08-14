@@ -28,7 +28,7 @@
   	<thead class="header">
   		<tr>
   			<th class="text-center">
-  				Name
+  				<a href="#" (click)="sortType('name')" [class.active]="sortBy === 'name'">Name</a>
   			</th>
   			<th class="text-center">
   				Country Code
@@ -40,7 +40,7 @@
   				Area (km2)
   			</th>
   			<th class="text-center">
-  				Population
+  				<a href="#" (click)="sortType('pop')" [class.active]="sortBy === 'pop'">Population</a>   				
   			</th>
   			<th class="text-center">
   				Continent

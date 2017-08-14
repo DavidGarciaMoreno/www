@@ -24,6 +24,17 @@ export class HomeComponent {
 			  );
 	}
 
+	sortType(sort: string) {
+		if(sort === 'name') {
+			this.countries = this.copyCountries.sort(this.sortByCountryName);
+			console.log(this.countries);
+		}
+		if(sort === 'pop') {
+			this.countries = this.copyCountries.sort(this.sortByPopulation);
+			console.log(this.countries);
+		}		
+	}
+
 	filterBy(filter: string) {
 		switch (filter) {
 			case "all":
@@ -46,5 +57,15 @@ export class HomeComponent {
 				
 				break;
 		}
+	}
+
+	sortByCountryName(c1: ICountry, c2: ICountry) {
+		if(c1.countryName > c2.countryName) return 1
+		else if (c1.countryName === c2.countryName) return 0
+		else return -1;
+	}
+
+	sortByPopulation(c1: ICountry, c2: ICountry) {
+		return parseInt(c1.population) - parseInt(c2.population);
 	}
 }
