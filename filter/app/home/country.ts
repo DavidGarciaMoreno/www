@@ -1,7 +1,8 @@
 export interface ICountry {
+  countryName: string;	
 	countryCode: string;
 	capital: string;
 	areaInSqKm: string;
-	pupulation: string;
+	population: string;
 	continentName: string;
 }

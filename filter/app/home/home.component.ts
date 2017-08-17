@@ -10,15 +10,20 @@ import { ICountry } from './country';
 
 export class HomeComponent {
 	countries: ICountry[];
-	copyCountries: ICountry[] = {};
+	copyCountries: ICountry[] = [];
 	errorMessage: string;
+	isLoadiong: boolean = false;
 
 	constructor(private _geonameService: GeonameService) {}
 
 	loadCountries() {
+		this.isLoadiong = true;
 		this._geonameService.getCountries()
 			  .subscribe(
-			  	countries => this.countries = countries,
+			  	countries => { 
+			  		this.countries = countries;
+			  		this.isLoading = false
+			  	},
 			  	error => this.errorMessage = <any> error,
 			  	() => this.copyCountries = this.countries 
 			  );
@@ -47,7 +52,7 @@ export class HomeComponent {
 			  });
 			  console.log('show only european coutries');
 			  break;
-			case "pop"
+			case "pop":
 			  this.countries = this.countries.filter(country => {
 			  	return parseInt(country.population) > 1000000;
 			  });

@@ -23,4 +23,15 @@ export class GeonameService {
 							 	return Observable.throw(error.json());
 						});
 	}
+
+	getCountry(id: string): Observable<ICountry> {
+		return this._htpp
+							 .get(`${this.URL}&country=${id}`)
+							 .map((response: Response) => <ICountry> response.json().geonames)
+							 .do(data => console.log(data))
+							 .catch(error => {
+							 	console.log(error);
+							 	return Observable.throw(error.json());
+						});
+	}
 }

@@ -1,8 +1,32 @@
 <div class="container">
-  <h1>Welcome to the Home Component</h1>
+  <div class="jumbotron">
+  	<p>This site provides information about countries and their capitals.</p>
+  	<table>
+  		<tr>
+  			<td class="icon-fp">
+  				<i class="fa fa-flag fa-5x"></i>
+  			</td>
+  			<td class="icon-fp">
+  				<i class="fa fa-flag-checkered fa-5x"></i>
+  			</td>
+  			<td class="icon-fp">
+  				<i class="fa fa-flag-o fa-5x"></i>
+  			</td>  		  			
+  		</tr>
+  	</table>
+  	<br>
+  	<p>Data is provided by the <a href="http://www.geonames.org/login" target="_blank">Geonames API</a></p>
+  </div>
+
   <button type="button" 
   			  class="btn btn-info btn-lg"
   			  (click)="loadCountries()">Load Countries</button>
+
+  <!-- Loader -->
+  <div class="loader" *ngIf="isLoading"></div>
+
+  <!-- Error Message -->
+  <div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
 
  	<div class="table-responsive" *ngIf="countries" style="margin-top: 10px">
  		<div class="row filterBy">
@@ -49,7 +73,7 @@
   	</thead>
   	<tbody class="searchable">
   		<tr *ngFor="let country of countries">
-  			<td>{{ country.countryName }}</td>
+  			<td><a [routerLink]="['/country', country.countryCode]">{{ country.countryName }}</a></td>
   			<td>{{ country.countryCode }}</td>
   			<td>{{ country.capital }}</td>
   			<td>{{ country.areaInSqKm | number:0 }}</td>

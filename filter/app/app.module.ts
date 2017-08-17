@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './nav/nav.component';
+import { CountryComponent } from './details/country.component';
 
 import { GeonameService } from './home/geoname.service';
 
@@ -21,7 +22,8 @@ import { GeonameService } from './home/geoname.service';
   declarations: [ 
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    CountryComponent
   ],
   providers: [ GeonameService ],
   bootstrap: [ AppComponent ]
