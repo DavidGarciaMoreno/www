@@ -36,7 +36,7 @@
                     <b>{{ tweet.user.location}}</b>
                     <div class="media-body">
                         <span class="text-muted pull-right">
-                            <small class="text-muted">{{ tweet.created_at | date }}</small>
+                            <small class="text-muted">{{ tweet.created_at | amTimeAgo }}</small>
                         </span>
                         <strong class="text-success">@{{ tweet.user.screen_name }}</strong>
                         <p [innerHtml]="tweet.text"></p>

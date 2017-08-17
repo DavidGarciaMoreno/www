@@ -14,6 +14,7 @@ import { PaginationModule } from 'ng2-bootstrap';
 import { AlertModule } from 'ng2-bootstrap';
 
 import { TweetService } from './tweet/tweet.service';
+import { TimeAgoPipe } from './shared/time-ago.pipe';
 
 @NgModule({
   imports: [ BrowserModule,
@@ -26,7 +27,8 @@ import { TweetService } from './tweet/tweet.service';
   declarations: [ AppComponent,
                           HomeComponent,
                           NavbarComponent,
-                          TweetComponent
+                          TweetComponent,
+                          TimeAgoPipe
                           ],
   providers: [ TweetService ],
   bootstrap:    [ AppComponent ]

@@ -18,6 +18,7 @@ var tweet_component_1 = require("./tweet/tweet.component");
 var ng2_bootstrap_1 = require("ng2-bootstrap");
 var ng2_bootstrap_2 = require("ng2-bootstrap");
 var tweet_service_1 = require("./tweet/tweet.service");
+var time_ago_pipe_1 = require("./shared/time-ago.pipe");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,7 +34,8 @@ var AppModule = (function () {
             declarations: [app_component_1.AppComponent,
                 home_component_1.HomeComponent,
                 nav_component_1.NavbarComponent,
-                tweet_component_1.TweetComponent
+                tweet_component_1.TweetComponent,
+                time_ago_pipe_1.TimeAgoPipe
             ],
             providers: [tweet_service_1.TweetService],
             bootstrap: [app_component_1.AppComponent]
