@@ -1,98 +1,97 @@
 <div class="container">
   <div class="col-md-12">
-	  <!-- Form container -->
-	  <div class="col-md-5">
-	    <div class="well">
-	      <form (ngSubmit)="search()">
-	        <div class="form-group">
-	          <h3>Search Twitter</h3>
-	          <input name="Search"
-	              [(ngModel)]="query"
-	              name="query"
-	              type="text"
-	              class="form-control input-lg"
-	              placeholder="Search">
-	        </div>
-	        <button class="btn btn-success profile-btn"
-	                type="submit">
-	          Submit
-	        </button>
-	      </form>
-	    </div>
-	    <alert type="danger" *ngIf="noTweets && !isLoading">{{ errorMessage }}</alert>
-	  </div>
+  <!-- Form container -->
+  <div class="col-md-5">
+    <div class="well">
+      <form (ngSubmit)="search()">
+        <div class="form-group">
+          <h3>Search Twitter</h3>
+          <input name="Search"
+              [(ngModel)]="query"
+              name="query"
+              type="text"
+              class="form-control input-lg"
+              placeholder="Search">
+          </div>
+            <button class="btn btn-success profile-btn"
+                          type="submit">
+                 Submit
+            </button>
+        </form>
+      </div>
+     <alert type="danger" *ngIf="noTweets">{{ errorMessage }}</alert>
+    </div>
 
     <div class="col-md-6 .col-md-offset-1" *ngIf="tweets && tweets.length">
     <!-- Display tweets -->
-    	<h2>Tweets</h2>
+    <h2>Tweets</h2>
       <div class="loader" *ngIf="isLoading"></div>
-      <div class="tweet-list">
-        <ul class="list-group media-list" *ngIf="!isLoading">
-          <li class="media" *ngFor="let tweet of perPageTweets">
-            <div class="pull-left">
-              <img [src]="tweet.user.profile_image_url" class="img-circle user-avatar">
-            </div>
-            <b>{{ tweet.user.location }}</b>
-            <div class="media-body">
-              <span class="text-muted pull-right">
-                <small class="text-muted">{{ tweet.created_at | date }}</small>
-              </span>
-              <strong class="text-success">{{ tweet.user.screen_name }}</strong>
-              <p [innerHtml]="tweet.text"></p>
-            </div>
+          <div class="tweet-list">
+            <ul class="list-group media-list" *ngIf="!isLoading">
+                <li class="media"
+                      *ngFor="let tweet of perPageTweets">
+                    <div class="pull-left">
+                        <img [src]="tweet.user.profile_image_url" class="img-circle user-avatar">
+                    </div>
+                    <b>{{ tweet.user.location}}</b>
+                    <div class="media-body">
+                        <span class="text-muted pull-right">
+                            <small class="text-muted">{{ tweet.created_at | date }}</small>
+                        </span>
+                        <strong class="text-success">@{{ tweet.user.screen_name }}</strong>
+                        <p [innerHtml]="tweet.text"></p>
+                    </div>
 
-            <!-- If Photos or Videos display here -->
-            <div class="col-xs-10">
-              <ul class="list-group" *ngIf="tweet.extended_endtities != null">
-                <li class="list-group-item list-group-item-action list-group-item-success" *ngFor="let media of tweet.extended_entities.media">
-                  <a [href]="media.url" target="_blank"><img width="40%" height="40%" *ngIf="media.type === 'photo' || 'animated_gif'" [src]="media.media_url" /></a>
-                  <div *ngIf="media.type === 'video'"
-                  		 align="center"
-                       class="embed-responsive embed-responsive-16by9">
-                    <video controls [poster]="media.media_url"
-                           class="embed-responsive-item"
-                           *ngFor="let variant of media.video_info.variants">
-                  	  <source [src]="variant.url" [type]="variant.content_type">
-                    </video>
+                <!-- If Photos or Videos display here -->
+              <div class="col-xs-10">
+                <ul class="list-group" *ngIf="tweet.extended_entities != null">
+                    <li class="list-group-item list-group-item-action list-group-item-success"
+                        *ngFor="let media of tweet.extended_entities.media">
+                        <a [href]="media.url" target="_blank"><img width="40%" height="40%"
+                                 *ngIf="media.type === 'photo' || 'animated_gif'" [src]="media.media_url" /></a>
+                        <div *ngIf="media.type === 'video'"
+                                align="center"
+                                class="embed-responsive embed-responsive-16by9">
+                            <video controls [poster]="media.media_url"
+                                       class="embed-responsive-item"
+                                       *ngFor="let variant of media.video_info.variants">
+                                <source [src]="variant.url" [type]="variant.content_type">
+                            </video>
+                        </div>
+                        <audio *ngIf="media.type === 'audio'" controls>
+                            <source [src]="media.media_url" />
+                        </audio>
+                    </li>
+                </ul>
+              </div>
+
+              <div class="clearfix"></div>
+                <div class="col-xs-10 user-stats">
+                  <div class="col-xs-12 col-sm-4">
+                    <h4><strong> {{ tweet.user.followers_count }} </strong></h4>
+                    <span class="label label-primary">Followers</span>
                   </div>
-                  <audio *ngIf="media.type === 'audio'" controls>
-                    <source [src]="media.media_url">
-                  </audio>
-                </li>
-              </ul>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="col-xs-10 user-stats">
-              <div class="col-xs-12 col-sm-4">
-                <h4><strong>{{ tweet.user.followers_count }}</strong></h4>
-                <span class="label label-primary">Followers</span>
+                  <!--/col-->
+                  <div class="col-xs-12 col-sm-4">
+                    <h4><strong>{{ tweet.user.friends_count }}</strong></h4>
+                    <span class="label label-info">Following</span>
+                  </div>
+                  <!--/col-->
+                  <div class="col-xs-12 col-sm-4">
+                    <h4><strong>{{ tweet.user.statuses_count }}</strong></h4>
+                    <span class="label label-warning">Tweets</span>
+                </div>
               </div>
-
-              <!--/col-->
-              <div class="col-xs-12 col-sm-4">
-                <h4><strong>{{ tweet.user.friends_count }}</strong></h4>
-                <span class="label label-info">Following</span>
-              </div>
-
-              <!--/col-->
-              <div class="col-xs-12 col-sm-4">
-                <h4><strong>{{ tweet.user.statuses_count }}</strong></h4>
-                <span class="label label-warning">Tweets</span>
-              </div>
-            </div>
-          </li>
+            </li>
         </ul>
       </div>
-  		<!-- Pagination -->
-  		<pagination 
-  			*ngIf="totalItems !== 0 && !isLoading"
-  			[totalItems]="totalItems"
-  			[(ngModel)]="currentPage"
-  			(pageChanged)="pageCanged($eent)"
-  			[itemsPerPage]="itemsPerPage">
-  		</pagination>
-  	</div>
-  </div>
+  <!-- Pagination -->
+  <pagination *ngIf="totalItems !== 0 && !isLoading"
+                      [totalItems]="totalItems"
+                      [(ngModel)]="currentPage"
+                      (pageChanged)="pageChanged($event)"
+                      [itemsPerPage]="itemsPerPage">
+              </pagination>
+          </div>
+     </div>
 </div>
