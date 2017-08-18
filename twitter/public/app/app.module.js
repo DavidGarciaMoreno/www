@@ -15,9 +15,11 @@ var app_component_1 = require("./app.component");
 var home_component_1 = require("./home/home.component");
 var nav_component_1 = require("./nav/nav.component");
 var tweet_component_1 = require("./tweet/tweet.component");
+var stream_component_1 = require("./stream/stream.component");
 var ng2_bootstrap_1 = require("ng2-bootstrap");
 var ng2_bootstrap_2 = require("ng2-bootstrap");
 var tweet_service_1 = require("./tweet/tweet.service");
+var socket_service_1 = require("./stream/socket.service");
 var time_ago_pipe_1 = require("./shared/time-ago.pipe");
 var AppModule = (function () {
     function AppModule() {
@@ -35,9 +37,11 @@ var AppModule = (function () {
                 home_component_1.HomeComponent,
                 nav_component_1.NavbarComponent,
                 tweet_component_1.TweetComponent,
+                stream_component_1.StreamComponent,
                 time_ago_pipe_1.TimeAgoPipe
             ],
-            providers: [tweet_service_1.TweetService],
+            providers: [tweet_service_1.TweetService,
+                socket_service_1.SocketService],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

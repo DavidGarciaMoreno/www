@@ -9,4 +9,10 @@ import { Router } from '@angular/router';
 
 export class NavbarComponent {
   appName: string = "Twitter App 2407";
+
+  navItems: any[] = [
+      { routerLink: '/search', label: 'Search', active: false },
+      { routerLink: '/stream', label: 'Stream JS', active: false }
+  ];
+
 }

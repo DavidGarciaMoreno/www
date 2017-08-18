@@ -39,7 +39,7 @@ export class TweetComponent {
       this.isLoading = false;
       this.tweets = response;
 
-      if(!this.tweets.length) {
+      if(this.tweets && !this.tweets.length) {
         this.noTweets = true;
       }
       this.noTweets = false;

@@ -10,6 +10,10 @@ var core_1 = require("@angular/core");
 var NavbarComponent = (function () {
     function NavbarComponent() {
         this.appName = "Twitter App 2407";
+        this.navItems = [
+            { routerLink: '/search', label: 'Search', active: false },
+            { routerLink: '/stream', label: 'Stream JS', active: false }
+        ];
     }
     NavbarComponent = __decorate([
         core_1.Component({

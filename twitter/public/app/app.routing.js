@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var home_component_1 = require("./home/home.component");
 var tweet_component_1 = require("./tweet/tweet.component");
+var stream_component_1 = require("./stream/stream.component");
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
     }
@@ -19,6 +20,7 @@ var AppRoutingModule = (function () {
                 router_1.RouterModule.forRoot([
                     { path: '', component: home_component_1.HomeComponent },
                     { path: 'search', component: tweet_component_1.TweetComponent },
+                    { path: 'stream', component: stream_component_1.StreamComponent },
                     { path: '**', redirectTo: '', pathMatch: 'full' }
                 ], { preloadingStrategy: router_1.PreloadAllModules }) // ,  {enableTracing: true} )
             ],

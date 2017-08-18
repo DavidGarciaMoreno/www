@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="col-xs-8">
+    <button class="btn btn-primary btn-lg" (click)="stop()">Stop</button>
+  </div>
+   <div class="clearfix"></div><br>
+   <!-- Display loader -->
+    <div class="col-md-5" *ngIf="isLoading">
+      <div class="loader"></div><h2>Searching for 'javascript'</h2>
+    </div>
+
+    <div class="col-md-8 .col-md-offset-1" *ngIf="tweets && tweets.length">
+    <!-- Display tweets -->
+    <h2>Streaming Javascript Tweets</h2>
+      <div class="loader" *ngIf="isLoading"></div>
+          <div class="tweet-list">
+            <ul class="list-group media-list">
+                <li class="media"
+                      *ngFor="let tweet of tweets">
+                    <div class="pull-left">
+                        <img [src]="tweet.user.profile_image_url" class="img-circle user-avatar">
+                    </div>
+                    <b>{{ tweet.user.location}}</b>
+                    <div class="media-body">
+                        <span class="text-muted pull-right">
+                            <small class="text-muted">{{ tweet.created_at | amTimeAgo }}</small>
+                        </span>
+                        <strong class="text-success">@{{ tweet.user.screen_name }}</strong>
+                        <p [innerHtml]="tweet.text"></p>
+                    </div>
+
+                <!-- If Photos or Videos display here -->
+              <div class="col-xs-10">
+                <ul class="list-group" *ngIf="tweet.extended_entities != null">
+                    <li class="list-group-item list-group-item-action list-group-item-success"
+                        *ngFor="let media of tweet.extended_entities.media">
+                        <a [href]="media.url" target="_blank"><img width="40%" height="40%"
+                                 *ngIf="media.type === 'photo' || 'animated_gif'" [src]="media.media_url" /></a>
+                        <div *ngIf="media.type === 'video'"
+                                align="center"
+                                class="embed-responsive embed-responsive-16by9">
+                            <video controls [poster]="media.media_url"
+                                       class="embed-responsive-item"
+                                       *ngFor="let variant of media.video_info.variants">
+                                <source [src]="variant.url" [type]="variant.content_type">
+                            </video>
+                        </div>
+                        <audio *ngIf="media.type === 'audio'" controls>
+                            <source [src]="media.media_url" />
+                        </audio>
+                    </li>
+                </ul>
+              </div>
+
+              <div class="clearfix"></div>
+                <div class="col-xs-10 user-stats">
+                  <div class="col-xs-12 col-sm-4">
+                    <h4><strong> {{ tweet.user.followers_count }} </strong></h4>
+                    <span class="label label-primary">Followers</span>
+                  </div>
+                  <!--/col-->
+                  <div class="col-xs-12 col-sm-4">
+                    <h4><strong>{{ tweet.user.friends_count }}</strong></h4>
+                    <span class="label label-info">Following</span>
+                  </div>
+                  <!--/col-->
+                  <div class="col-xs-12 col-sm-4">
+                    <h4><strong>{{ tweet.user.statuses_count }}</strong></h4>
+                    <span class="label label-warning">Tweets</span>
+                </div>
+              </div>
+            </li>
+        </ul>
+          </div>
+     </div>
+</div>
