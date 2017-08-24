@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders } from './app.routing';
 
 import { EmailModule } from './modules/email/moduloemail.module';
+import { AdminModule } from './admin/admin.module';
 
 import { AppComponent } from './app.component';
 
@@ -31,7 +32,8 @@ import { SimpleTinyComponent } from './components/simple-tiny/simple-tiny.compon
     FormsModule,
     HttpModule,
     routing,
-    EmailModule
+    EmailModule,
+    AdminModule
   ],
   providers: [ appRoutingProviders ],
   bootstrap: [ AppComponent ]
