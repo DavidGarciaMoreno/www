@@ -1,5 +1,22 @@
 <h1>{{ titulo }}</h1>
 
+<a class="boton_activo btn btn-success" [@marcar]="status" (click)="cambiarEstado()">
+  <span *ngIf="status == 'inactive'">Boton inactivo</span>
+  <span *ngIf="status == 'active'">Boton activado</span>
+</a>
+
+<hr>
+
+<a class="boton_transiciones">Transiciones</a>
+
+<div class="clearfix"></div>
+
+<div class="caja_animada">
+  
+</div>
+
+<hr>
+
 <h4>Utilizar jquery dentro de Angular</h4>
 <button type="button" class="btn btn-primary" id="botonjq">Mostrar texto</button>
 <p id="textojq" class="alert alert-warning">

@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class ListComponent {
   private title = 'Listado';
+  numbers = new Array(10);
 }
